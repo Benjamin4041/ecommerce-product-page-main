@@ -11,14 +11,14 @@ function App() {
   let [clickAdd,setClickAdd]=useState(false)
   const addToCart=()=>{
     setClickAdd(true)
-    localStorage.setItem()
+    // localStorage.setItem()
   }
   return (
     <MyProvider>
       <div className=" w-screen lg:w-[100%] xl:w-[100%] lg:pl-28 xl:pl-28 lg:pr-28 xl:pr-28 ">
         <Navbar cartNum={clickAdd===false? 0 : itemnumber} />
       <span className="lg:flex lg:justify-end flex justify-center  ">
-          <Cart/>
+          <Cart itemnum={itemnumber} clickadd={clickAdd}/>
         </span>
         <span className="flex lg:gap-24 flex-col lg:flex-row xl:flex-row lg:mt-14 xl:mt-14">
           <Shoeimage />
@@ -36,7 +36,7 @@ function App() {
             </p>
             <div className="flex lg:flex-col xl:flex-col lg:w-fit xl:w-fit  justify-between ">
               <span className="flex justify-between items-center mt-5 mb-1 font-kumbh text-2xl gap-10 font-extrabold text-[1.8rem]">
-                ${itemnumber === 0 ? 125.0 : 125.0 * itemnumber}.00
+                $125.00
                 <p className="bg-orange-200 text-orange-500 p-1 pl-3 pr-3 text-sm rounded-md font-kumbh">
                   50%
                 </p>
