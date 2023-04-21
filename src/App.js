@@ -11,7 +11,7 @@ function App() {
   let [clickAdd,setClickAdd]=useState(false)
   const addToCart=()=>{
     setClickAdd(true)
-    
+    localStorage.setItem()
   }
   return (
     <MyProvider>
