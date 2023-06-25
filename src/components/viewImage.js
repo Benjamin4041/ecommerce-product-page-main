@@ -9,7 +9,7 @@ export default function Viewimage({ hideTriger }) {
       className={
         hide === true
           ? "hidden"
-          : "flex flex-col gap-4  w-screen bg-transparentBlack absolute top-0 -translate-x-32 justify-center items-center h-screen "
+          : "flex flex-col gap-4  w-screen bg-transparentBlack absolute top-0 -translate-x-32 justify-center items-center "
       }
     >
       <svg
